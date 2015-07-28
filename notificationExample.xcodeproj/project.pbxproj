@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204BF37D1B670BC0004124DD /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 204BF37C1B670BC0004124DD /* ViewController2.m */; };
 		20B7B5F91B65569A00DAC462 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7B5F81B65569A00DAC462 /* main.m */; };
 		20B7B5FC1B65569A00DAC462 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7B5FB1B65569A00DAC462 /* AppDelegate.m */; };
 		20B7B5FF1B65569A00DAC462 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7B5FE1B65569A00DAC462 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		20B7B6041B65569B00DAC462 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B7B6031B65569B00DAC462 /* Images.xcassets */; };
 		20B7B6071B65569B00DAC462 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20B7B6051B65569B00DAC462 /* LaunchScreen.xib */; };
 		20B7B6131B65569B00DAC462 /* notificationExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7B6121B65569B00DAC462 /* notificationExampleTests.m */; };
+		20B7B61D1B65A1F200DAC462 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B7B61C1B65A1F200DAC462 /* EstimoteSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		204BF37B1B670BC0004124DD /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		204BF37C1B670BC0004124DD /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		20B7B5F31B65569A00DAC462 /* notificationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notificationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B7B5F71B65569A00DAC462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20B7B5F81B65569A00DAC462 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,7 @@
 		20B7B60C1B65569B00DAC462 /* notificationExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = notificationExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B7B6111B65569B00DAC462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20B7B6121B65569B00DAC462 /* notificationExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = notificationExampleTests.m; sourceTree = "<group>"; };
+		20B7B61C1B65A1F200DAC462 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B7B61D1B65A1F200DAC462 /* EstimoteSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,9 @@
 		20B7B5EA1B65569A00DAC462 = {
 			isa = PBXGroup;
 			children = (
+				204BF37B1B670BC0004124DD /* ViewController2.h */,
+				204BF37C1B670BC0004124DD /* ViewController2.m */,
+				20B7B61C1B65A1F200DAC462 /* EstimoteSDK.framework */,
 				20B7B5F51B65569A00DAC462 /* notificationExample */,
 				20B7B60F1B65569B00DAC462 /* notificationExampleTests */,
 				20B7B5F41B65569A00DAC462 /* Products */,
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B7B5FF1B65569A00DAC462 /* ViewController.m in Sources */,
+				204BF37D1B670BC0004124DD /* ViewController2.m in Sources */,
 				20B7B5FC1B65569A00DAC462 /* AppDelegate.m in Sources */,
 				20B7B5F91B65569A00DAC462 /* main.m in Sources */,
 			);
@@ -347,6 +357,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = notificationExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +371,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = notificationExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +434,7 @@
 				20B7B6181B65569B00DAC462 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20B7B6191B65569B00DAC462 /* Build configuration list for PBXNativeTarget "notificationExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +443,7 @@
 				20B7B61B1B65569B00DAC462 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <EstimoteSDK/EstimoteSDK.h>
+#import "ViewController2.h"
 @interface ViewController : UIViewController
 
-
+- (id)initWithBeacon:(CLBeacon *)beacon;
 @end
 
